@@ -15,7 +15,7 @@ jobs:
           pwd
           ls
       - name: oc login
-        run: oc login --token=${{ secrets.OCP_TOKEN }} --server=https://api.devops24.cloud2.se:6443
+        run: oc login --token=${{ secrets.OCP_TOKEN }} --insecure-skip-tls-verify --server=https://api.devops24.cloud2.se:6443
       - name: oc project
         run: oc project test-miljo2
       - name: oc get
