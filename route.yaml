@@ -5,7 +5,7 @@ metadata:
 spec:
   to:
     kind: Service
-    name: ngnix-service
+    name: nginx-service
   port:
     targetPort: 8080
   tls:
