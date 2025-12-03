@@ -9,6 +9,10 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-      - name: Echo Hello
-        run: echo "Hello world!"
+      - uses: actions/checkout@v4
+      - name: Git repo
+        run: |
+          pwd
+          ls
+          
     
