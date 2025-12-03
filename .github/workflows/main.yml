@@ -22,6 +22,6 @@ jobs:
         run: |
           oc apply -f configmap-web.yaml
           oc apply -f deployment.yaml
-          oc logout
+          
       
     
