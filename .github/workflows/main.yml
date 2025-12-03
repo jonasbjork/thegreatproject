@@ -1,0 +1,14 @@
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  hello:
+    name: Hello World
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Echo Hello
+        run: echo "Hello world!"
+    
