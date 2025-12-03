@@ -16,6 +16,6 @@ jobs:
           ls
       - name: OC or kubectl
         run: |
-          oc --version
-          kubectl --version
+          oc version
+      
     
