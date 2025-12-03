@@ -18,7 +18,10 @@ jobs:
         run: oc login --token=${{ secrets.OCP_TOKEN }} --insecure-skip-tls-verify --server=https://api.devops24.cloud2.se:6443
       - name: oc project
         run: oc project test-miljo2
-      - name: oc get
-        run: oc get pods
+      - name: oc apply
+        run: |
+          oc apply -f configmap-web.yaml
+          oc apply -f deployment.yaml
+          oc logout
       
     
