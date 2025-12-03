@@ -14,5 +14,8 @@ jobs:
         run: |
           pwd
           ls
-          
+      - name: OC or kubectl
+        run: |
+          oc --version
+          kubectl --version
     
